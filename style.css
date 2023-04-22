@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.about-eisenhower-matrix img {
+.about-eisenhower-matrix__img {
   width: 100%;
 }
-.about-eisenhower-matrix .about-eisenhower-matrix__link {
+.about-eisenhower-matrix__link {
   font-family: fantasy, cursive;
 }
 
@@ -34,17 +34,17 @@ body {
 .todo-list__add-item__wrapper {
   display: flex;
 }
-ul {
+.todo-list__list-block {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.todo-list__list-block__item, .todo-list__headline {
   list-style:none;
 }
-input,button{
+.todo-list__add-item__input, .todo-list__list-block__item__input, .todo-list__add-item__button, .todo-list__list-block__item__button {
   outline:none;
 }
-button {
+.todo-list__add-item__button, .todo-list__list-block__item__button {
   background: none;
   border: 0px;
   color: #888;
@@ -53,12 +53,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.todo-list__add-item__button:hover, .todo-list__list-block__item__button:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for="todo-list__add-item__input"] {
+.todo-list__headline, .todo-list__add-item__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -67,7 +66,7 @@ label[for="todo-list__add-item__input"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.todo-list__add-item__input_text, .todo-list__list-block__item__input_text {
 margin: 0;
 font-size: 18px;
 line-height: 18px;
@@ -79,21 +78,21 @@ border-radius: 6px;
 font-family: Lato, sans-serif;
 color: #888;
 }
-input[type="text"]:focus {
+.todo-list__add-item__input_text:focus, .todo-list__list-block__item__input_text:focus {
     color: #333;
 }
 
 /* New Task */
-label[for="todo-list__add-item__input"] {
+.todo-list__add-item__label {
   display: block;
   margin: 0 0 20px;
 }
-input#todo-list__add-item__input {
+#todo-list__add-item__input {
   width: 318px;
 }
 
 /* Task list */
-li {
+.todo-list__list-block__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -101,47 +100,47 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.todo-list__list-block__item__input, .todo-list__list-block__item__button, .todo-list__list-block__item__label {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.todo-list__list-block__item__input_check {
   margin: 0 10px;
 }
-li > label {
+.todo-list__list-block__item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.todo-list__list-block__item__input_text {
   width: 226px
 }
-button.button_delete img {
+.todo-list__list-block__item__button__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.button_delete img:hover {
+.todo-list__list-block__item__button__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks > todo-list__list-block__item__label {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.todo-list__list-block__item__input_text {
   display:none
 }
 
-ul li.edit-mode input[type=text] {
+.todo-list__list-block__item.edit-mode .todo-list__list-block__item__input_text {
   display:inline-block;
   width:224px
 }
 
-ul li.edit-mode label {
+.todo-list__list-block__item.edit-mode .todo-list__list-block__item__label {
   display:none;
 }
