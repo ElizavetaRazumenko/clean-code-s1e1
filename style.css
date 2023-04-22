@@ -4,46 +4,58 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .about-eisenhower-matrix {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .about-eisenhower-matrix__img {
   width: 100%;
 }
+
 .about-eisenhower-matrix__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
+
   .about-eisenhower-matrix { text-align: center;
   }
+
 }
+
 .todo-list {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .todo-list__add-item__wrapper {
   display: flex;
 }
+
 .todo-list__list-block {
   margin:0;
   padding: 0px;
 }
+
 .todo-list__list-block__item, .todo-list__headline {
   list-style:none;
 }
+
 .todo-list__add-item__input, .todo-list__list-block__item__input, .todo-list__add-item__button, .todo-list__list-block__item__button {
   outline:none;
 }
+
 .todo-list__add-item__button, .todo-list__list-block__item__button {
   background: none;
   border: 0px;
@@ -53,9 +65,11 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .todo-list__add-item__button:hover, .todo-list__list-block__item__button:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 .todo-list__headline, .todo-list__add-item__label {
   color: #333;
@@ -66,6 +80,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .todo-list__add-item__input_text, .todo-list__list-block__item__input_text {
 margin: 0;
 font-size: 18px;
@@ -78,15 +93,18 @@ border-radius: 6px;
 font-family: Lato, sans-serif;
 color: #888;
 }
+
 .todo-list__add-item__input_text:focus, .todo-list__list-block__item__input_text:focus {
     color: #333;
 }
+
 
 /* New Task */
 .todo-list__add-item__label {
   display: block;
   margin: 0 0 20px;
 }
+
 #todo-list__add-item__input {
   width: 318px;
 }
@@ -100,6 +118,7 @@ color: #888;
   justify-content: space-between;
   align-items: center;
 }
+
 .todo-list__list-block__item__input, .todo-list__list-block__item__button, .todo-list__list-block__item__label {
   vertical-align: middle;
 }
@@ -107,20 +126,24 @@ color: #888;
 .todo-list__list-block__item__input_check {
   margin: 0 10px;
 }
+
 .todo-list__list-block__item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .todo-list__list-block__item__input_text {
   width: 226px
 }
+
 .todo-list__list-block__item__button__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .todo-list__list-block__item__button__img:hover {
   transform: rotateZ(0);
 }
