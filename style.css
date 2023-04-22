@@ -22,7 +22,8 @@
 
 @media (max-width:768px) {
 
-  .about-eisenhower-matrix { text-align: center;
+  .about-eisenhower-matrix { 
+    text-align: center;
   }
 
 }
@@ -44,16 +45,16 @@
 }
 
 .todo-list__list-block {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .todo-list__list-block__item, .todo-list__headline {
-  list-style:none;
+  list-style: none;
 }
 
 .todo-list__add-item__input, .todo-list__list-block__item__input, .todo-list__add-item__button, .todo-list__list-block__item__button {
-  outline:none;
+  outline: none;
 }
 
 .todo-list__add-item__button, .todo-list__list-block__item__button {
@@ -138,13 +139,13 @@ color: #888;
   width: 226px
 }
 
-.todo-list__list-block__item__button__img {
+.todo-list__list-block__item__button.button_delete .todo-list__list-block__item__button__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.todo-list__list-block__item__button__img:hover {
+.todo-list__list-block__item__button.button_delete .todo-list__list-block__item__button__img:hover {
   transform: rotateZ(0);
 }
 
@@ -156,14 +157,14 @@ color: #888;
 
 /* Edit Task */
 .todo-list__list-block__item__input_text {
-  display:none
+  display: none
 }
 
 .todo-list__list-block__item.edit-mode .todo-list__list-block__item__input_text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .todo-list__list-block__item.edit-mode .todo-list__list-block__item__label {
-  display:none;
+  display: none;
 }
