@@ -15,26 +15,23 @@
     <title>Todo App</title>
   </head>
   <body class="body">
-    <div class="about-eisenhower-matrix">
+    <header class="about-eisenhower-matrix">
         <img src="./eisenhower-matrix.jpg" class="about-eisenhower-matrix__img">
         <a class="about-eisenhower-matrix__link" 
               href="https://goal-life.com/page/method/matrix-eisenhower">
               Want more details?
         </a>
-    </div>
-    <div class="todo-list">
-        <p id="todo-list__add-item">
-        <label for="todo-list__add-item__input" 
-               class="todo-list__add-item__label">Add Item</label>
-        <div class="todo-list__add-item__wrapper">
+    </header>
+    <main class="todo-list">
+        <h3 class="todo-list__headline">Add Item</h3>
+        <section class="todo-list__add-item">
             <input id="todo-list__add-item__input" 
                    class="todo-list__add-item__input 
                           todo-list__add-item__input_text 
                           task" 
                    type="text">
             <button class="todo-list__add-item__button">Add</button>
-        </div>
-        </p>
+        </section>
         <h3 class="todo-list__headline">Todo</h3>
         <ul id="incomplete-tasks" class="todo-list__list-block">
             <li class="todo-list__list-block__item">
@@ -51,16 +48,16 @@
                                button_edit">Edit</button>
                 <button class="todo-list__list-block__item__button 
                                button_delete">
-                    <img src="./remove.svg" 
-                         class="todo-list__list-block__item__button__img">
+                  <img src="./remove.svg" 
+                       class="todo-list__list-block__item__button__img">
                 </button>
             </li>
             <li class="todo-list__list-block__item edit-mode">
                 <input type="checkbox"
                        class="todo-list__list-block__item__input 
                               todo-list__list-block__item__input_check">
-                <label class="todo-list__list-block__item__label 
-                              task">Go Shopping</label>
+                <span class="todo-list__list-block__item__label 
+                              task">Go Shopping</span>
                 <input type="text" value="Go Shopping" 
                        class="todo-list__list-block__item__input 
                               todo-list__list-block__item__input_text 
@@ -69,8 +66,8 @@
                                button_edit">Save</button>
                 <button class="todo-list__list-block__item__button 
                                button_delete">
-                    <img src="./remove.svg" 
-                         class="todo-list__list-block__item__button__img">
+                  <img src="./remove.svg" 
+                       class="todo-list__list-block__item__button__img">
                 </button>
             </li>
         </ul>
@@ -80,8 +77,8 @@
                 <input type="checkbox" 
                        class="todo-list__list-block__item__input 
                               todo-list__list-block__item__input_check" checked>
-                <label class="todo-list__list-block__item__label 
-                              task">See the Doctor</label>
+                <span class="todo-list__list-block__item__label 
+                              task">See the Doctor</span>
                 <input type="text" 
                        class="todo-list__list-block__item__input 
                               todo-list__list-block__item__input_text 
@@ -90,12 +87,12 @@
                                button_edit">Edit</button>
                 <button class="todo-list__list-block__item__button 
                                button_delete">
-                    <img src="./remove.svg" 
-                         class="todo-list__list-block__item__button__img">
+                  <img src="./remove.svg" 
+                       class="todo-list__list-block__item__button__img">
                 </button>
             </li>
         </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
