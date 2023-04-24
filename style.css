@@ -22,7 +22,7 @@
 
 @media (max-width:768px) {
 
-  .about-eisenhower-matrix { 
+  .about-eisenhower-matrix {
     text-align: center;
   }
 
@@ -34,7 +34,9 @@
   margin: 0 auto 0;
 }
 
-.task {
+.todo-list__add-item__input,
+.todo-list__list-block__span,
+.todo-list__list-block__input_text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -50,20 +52,20 @@
   padding: 0px;
 }
 
-.todo-list__list-block__item, 
+.todo-list__list-block__item,
 .todo-list__headline {
   list-style: none;
 }
 
-.todo-list__add-item__input, 
-.todo-list__list-block__item__input, 
-.todo-list__add-item__button, 
-.todo-list__list-block__item__button {
+.todo-list__add-item__input,
+.todo-list__list-block__input,
+.todo-list__add-item__button,
+.todo-list__list-block__button {
   outline: none;
 }
 
-.todo-list__add-item__button, 
-.todo-list__list-block__item__button {
+.todo-list__add-item__button,
+.todo-list__list-block__button {
   background: none;
   border: 0px;
   color: #888;
@@ -73,8 +75,8 @@
   cursor: pointer;
 }
 
-.todo-list__add-item__button:hover, 
-.todo-list__list-block__item__button:hover {
+.todo-list__add-item__button:hover,
+.todo-list__list-block__button:hover {
   color: #3a3A3a;
 }
 
@@ -89,29 +91,29 @@
   text-transform: uppercase;
 }
 
-.todo-list__add-item__input_text, 
-.todo-list__list-block__item__input_text {
-margin: 0;
-font-size: 18px;
-line-height: 18px;
-height: 21px;
-padding: 0 9px;
-border: 1px solid #dDd;
-background: #FFF;
-border-radius: 6px;
-font-family: Lato, sans-serif;
-color: #888;
+.todo-list__add-item__input,
+.todo-list__list-block__input_text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dDd;
+  background: #FFF;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
 }
 
-.todo-list__add-item__input_text:focus, 
-.todo-list__list-block__item__input_text:focus {
-    color: #333;
+.todo-list__add-item__input:focus,
+.todo-list__list-block__input_text:focus {
+  color: #333;
 }
 
 
 /* New Task */
 
-#todo-list__add-item__input {
+.todo-list__add-item__input {
   width: 318px;
 }
 
@@ -125,58 +127,58 @@ color: #888;
   align-items: center;
 }
 
-.todo-list__list-block__item__input, 
-.todo-list__list-block__item__button, 
-.todo-list__list-block__item__label {
+.todo-list__list-block__input,
+.todo-list__list-block__button,
+.todo-list__list-block__span {
   vertical-align: middle;
 }
 
-.todo-list__list-block__item__input_check {
+.todo-list__list-block__input_check {
   margin: 0 10px;
 }
 
-.todo-list__list-block__item__label {
+.todo-list__list-block__span {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.todo-list__list-block__item__input_text {
+.todo-list__list-block__input_text {
   width: 226px;
 }
 
-.todo-list__list-block__item__button.button_delete 
-.todo-list__list-block__item__button__img {
+.todo-list__list-block__button.todo-list__list-block__button_delete 
+.todo-list__list-block__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.todo-list__list-block__item__button.button_delete 
-.todo-list__list-block__item__button__img:hover {
+.todo-list__list-block__button.todo-list__list-block__button_delete 
+.todo-list__list-block__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks 
-.todo-list__list-block__item__label {
+.todo-list__list-block_completed-tasks 
+.todo-list__list-block__span {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.todo-list__list-block__item__input_text {
+.todo-list__list-block__input_text {
   display: none;
 }
 
-.todo-list__list-block__item.edit-mode 
-.todo-list__list-block__item__input_text {
+.todo-list__list-block__item.todo-list__list-block__item_edit-mode 
+.todo-list__list-block__input_text {
   display: inline-block;
   width: 224px;
 }
 
-.todo-list__list-block__item.edit-mode 
-.todo-list__list-block__item__label {
+.todo-list__list-block__item.todo-list__list-block__item_edit-mode 
+.todo-list__list-block__span {
   display: none;
 }
